@@ -48,5 +48,5 @@ Vous pouvez trouver les différentes versions du pod dans la catégorie [tags de
 
 ## License
 
-Ce projet utilise une license Apache 2.0 - consulter le ficher [LICENSE.md](LICENSE.md) pour plus de détails.
+Ce projet utilise une license Apache 2.0 - consulter le ficher [LICENSE.md](LICENSE) pour plus de détails.
 
