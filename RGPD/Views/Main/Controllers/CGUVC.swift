@@ -114,9 +114,12 @@ class CGUVC: UIViewController {
                 }
             }
             
+            checkImg.isHidden = false
             if theme.fullCircleColor.count == 1 {
                 checkBackground.backgroundColor = colorGenerator.oneColor(theme.fullCircleColor[0])
+                checkBackground.layer.borderWidth = 0
             } else {
+                checkBackground.layer.borderWidth = 0
                 let layer = colorGenerator.gradient(theme.fullCircleColor)
                 layer.frame = checkBackground.bounds
                 checkBackground.layer.insertSublayer(layer, at: 0)
@@ -157,12 +160,21 @@ class CGUVC: UIViewController {
                 }
             }
             
+            checkImg.isHidden = true
             if theme.emptyCircleColor.count == 1 {
-                checkBackground.backgroundColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
+                checkBackground.backgroundColor = nil
+                checkBackground.layer.borderColor = colorGenerator.oneColor(theme.emptyCircleColor[0]).cgColor
+                checkBackground.layer.borderWidth = 1.0
             } else {
-                let layer = colorGenerator.gradient(theme.emptyCircleColor)
-                layer.frame = checkBackground.bounds
-                checkBackground.layer.insertSublayer(layer, at: 0)
+                //                let layer = colorGenerator.gradient(theme.emptyCircleColor)
+                //                layer.frame = checkBackground.bounds
+                //                checkBackground.layer.insertSublayer(layer, at: 0)
+                checkBackground.backgroundColor = nil
+                var colors = [UIColor]()
+                for item in theme.emptyCircleColor {
+                    colors.append(colorGenerator.oneColor(item))
+                }
+                checkBackground.setGradientBorder(width: 1, colors: colors)
             }
             
             if theme.emptyButtonColor.count == 1 {

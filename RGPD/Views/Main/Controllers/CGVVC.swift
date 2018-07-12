@@ -115,9 +115,12 @@ class CGVVC: UIViewController {
                 }
             }
             
+            checkImg.isHidden = false
             if theme.fullCircleColor.count == 1 {
                 checkBackground.backgroundColor = colorGenerator.oneColor(theme.fullCircleColor[0])
+                checkBackground.layer.borderWidth = 0
             } else {
+                checkBackground.layer.borderWidth = 0
                 let layer = colorGenerator.gradient(theme.fullCircleColor)
                 layer.frame = checkBackground.bounds
                 checkBackground.layer.insertSublayer(layer, at: 0)
@@ -158,12 +161,21 @@ class CGVVC: UIViewController {
                 }
             }
             
+            checkImg.isHidden = true
             if theme.emptyCircleColor.count == 1 {
-                checkBackground.backgroundColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
+                checkBackground.backgroundColor = nil
+                checkBackground.layer.borderColor = colorGenerator.oneColor(theme.emptyCircleColor[0]).cgColor
+                checkBackground.layer.borderWidth = 1.0
             } else {
-                let layer = colorGenerator.gradient(theme.emptyCircleColor)
-                layer.frame = checkBackground.bounds
-                checkBackground.layer.insertSublayer(layer, at: 0)
+//                let layer = colorGenerator.gradient(theme.emptyCircleColor)
+//                layer.frame = checkBackground.bounds
+//                checkBackground.layer.insertSublayer(layer, at: 0)
+                checkBackground.backgroundColor = nil
+                var colors = [UIColor]()
+                for item in theme.emptyCircleColor {
+                    colors.append(colorGenerator.oneColor(item))
+                }
+                checkBackground.setGradientBorder(width: 1, colors: colors)
             }
             
             if theme.emptyButtonColor.count == 1 {
@@ -255,15 +267,15 @@ class CGVVC: UIViewController {
     }
 }
 
-fileprivate extension UIView {
+extension UIView {
     
     private static let kLayerNameGradientBorder = "GradientBorderLayer"
     
     func setGradientBorder(
         width: CGFloat,
         colors: [UIColor],
-        startPoint: CGPoint = CGPoint(x: 0.5, y: 0),
-        endPoint: CGPoint = CGPoint(x: 0.5, y: 1)
+        startPoint: CGPoint = CGPoint(x: 0, y: 0.5),
+        endPoint: CGPoint = CGPoint(x: 1, y: 0.5)
         ) {
         let existedBorder = gradientBorderLayer()
         let border = existedBorder ?? CAGradientLayer()
@@ -274,7 +286,7 @@ fileprivate extension UIView {
         border.cornerRadius = self.layer.cornerRadius
         
         let mask = CAShapeLayer()
-        mask.path = UIBezierPath(roundedRect: bounds, cornerRadius: 0).cgPath
+        mask.path = UIBezierPath(roundedRect: bounds, cornerRadius: 11).cgPath
         mask.fillColor = UIColor.clear.cgColor
         mask.strokeColor = UIColor.white.cgColor
         mask.lineWidth = width

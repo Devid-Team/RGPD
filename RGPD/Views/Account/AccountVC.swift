@@ -235,54 +235,74 @@ class AccountVC: UIViewController {
         
         if theme.emptyCircleColor.count == 1 {
             if RGPD.shared.authGiven != nil, !RGPD.shared.authGiven.keyAccepted.contains(RGPDPages.comm.rawValue) {
-                checkBackground1.backgroundColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
+                checkBackground1.backgroundColor = nil
+                checkBackground1.layer.borderColor = colorGenerator.oneColor(theme.emptyCircleColor[0]).cgColor
+                checkBackground1.layer.borderWidth = 1.0
                 infoLbl1.textColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
             }
             if RGPD.shared.authGiven != nil, !RGPD.shared.authGiven.keyAccepted.contains(RGPDPages.stats.rawValue) {
-                checkBackground2.backgroundColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
+                checkBackground2.backgroundColor = nil
+                checkBackground2.layer.borderColor = colorGenerator.oneColor(theme.emptyCircleColor[0]).cgColor
+                checkBackground2.layer.borderWidth = 1.0
                 infoLbl2.textColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
             }
             if RGPD.shared.authGiven != nil, !RGPD.shared.authGiven.keyAccepted.contains(RGPDPages.private_data.rawValue) {
-                checkBackground3.backgroundColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
+                checkBackground3.backgroundColor = nil
+                checkBackground3.layer.borderColor = colorGenerator.oneColor(theme.emptyCircleColor[0]).cgColor
+                checkBackground3.layer.borderWidth = 1.0
                 infoLbl3.textColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
             }
             if RGPD.shared.authGiven != nil, !RGPD.shared.authGiven.keyAccepted.contains(RGPDPages.payment_data.rawValue) {
-                checkBackground4.backgroundColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
+                checkBackground4.backgroundColor = nil
+                checkBackground4.layer.borderColor = colorGenerator.oneColor(theme.emptyCircleColor[0]).cgColor
+                checkBackground4.layer.borderWidth = 1.0
                 infoLbl4.textColor = colorGenerator.oneColor(theme.emptyCircleColor[0])
             }
         } else {
             if RGPD.shared.authGiven != nil, !RGPD.shared.authGiven.keyAccepted.contains(RGPDPages.comm.rawValue) {
-                var layer = colorGenerator.gradient(theme.emptyCircleColor)
-                layer.frame = checkBackground1.bounds
-                checkBackground1.layer.insertSublayer(layer, at: 0)
-                layer = colorGenerator.gradient(theme.fullCircleColor)
+                checkBackground1.backgroundColor = nil
+                var colors = [UIColor]()
+                for item in theme.emptyCircleColor {
+                    colors.append(colorGenerator.oneColor(item))
+                }
+                checkBackground1.setGradientBorder(width: 1, colors: colors)
+                let layer = colorGenerator.gradient(theme.fullCircleColor)
                 layer.frame = infoView1.bounds
                 infoView1.layer.insertSublayer(layer, at: 0)
                 infoView1.mask = infoLbl1
             }
             if RGPD.shared.authGiven != nil, !RGPD.shared.authGiven.keyAccepted.contains(RGPDPages.stats.rawValue) {
-                var layer = colorGenerator.gradient(theme.emptyCircleColor)
-                layer.frame = checkBackground2.bounds
-                checkBackground2.layer.insertSublayer(layer, at: 0)
-                layer = colorGenerator.gradient(theme.fullCircleColor)
+                checkBackground2.backgroundColor = nil
+                var colors = [UIColor]()
+                for item in theme.emptyCircleColor {
+                    colors.append(colorGenerator.oneColor(item))
+                }
+                checkBackground2.setGradientBorder(width: 1, colors: colors)
+                let layer = colorGenerator.gradient(theme.fullCircleColor)
                 layer.frame = infoView2.bounds
                 infoView2.layer.insertSublayer(layer, at: 0)
                 infoView2.mask = infoLbl2
             }
             if RGPD.shared.authGiven != nil, !RGPD.shared.authGiven.keyAccepted.contains(RGPDPages.private_data.rawValue) {
-                var layer = colorGenerator.gradient(theme.emptyCircleColor)
-                layer.frame = checkBackground3.bounds
-                checkBackground3.layer.insertSublayer(layer, at: 0)
-                layer = colorGenerator.gradient(theme.fullCircleColor)
+                checkBackground3.backgroundColor = nil
+                var colors = [UIColor]()
+                for item in theme.emptyCircleColor {
+                    colors.append(colorGenerator.oneColor(item))
+                }
+                checkBackground3.setGradientBorder(width: 1, colors: colors)
+                let layer = colorGenerator.gradient(theme.fullCircleColor)
                 layer.frame = infoView3.bounds
                 infoView3.layer.insertSublayer(layer, at: 0)
                 infoView3.mask = infoLbl3
             }
             if RGPD.shared.authGiven != nil, !RGPD.shared.authGiven.keyAccepted.contains(RGPDPages.payment_data.rawValue) {
-                var layer = colorGenerator.gradient(theme.emptyCircleColor)
-                layer.frame = checkBackground4.bounds
-                checkBackground4.layer.insertSublayer(layer, at: 0)
-                layer = colorGenerator.gradient(theme.fullCircleColor)
+                checkBackground4.backgroundColor = nil
+                var colors = [UIColor]()
+                for item in theme.emptyCircleColor {
+                    colors.append(colorGenerator.oneColor(item))
+                }
+                checkBackground4.setGradientBorder(width: 1, colors: colors)
+                let layer = colorGenerator.gradient(theme.fullCircleColor)
                 layer.frame = infoView4.bounds
                 infoView4.layer.insertSublayer(layer, at: 0)
                 infoView4.mask = infoLbl4
