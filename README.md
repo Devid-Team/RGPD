@@ -32,7 +32,7 @@ target '...' do
  ...
 ```
 
-Puis de lancer l'installation depuis un terminal, en vous cituant dans le dossier de votre projet.
+Puis de lancer l'installation depuis un terminal, en vous situant dans le dossier de votre projet.
 
 ```
 $ pod install
