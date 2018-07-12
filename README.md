@@ -46,8 +46,6 @@ Vous pouvez trouver les différentes versions du pod dans la catégorie [tags de
 
 * **Dev-id** - *Pod RGPD* - [Devid-Team](https://github.com/Devid-Team)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
 Ce projet utilise une license Apache 2.0 - consulter le ficher [LICENSE.md](LICENSE.md) pour plus de détails.
