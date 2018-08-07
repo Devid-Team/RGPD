@@ -28,7 +28,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://tdeprez@bitbucket.org/tdeprez/rgpd_pod_spec.git'
 ...
 target '...' do
- pod 'Parse'
+ pod 'RGPD'
  ...
 ```
 
