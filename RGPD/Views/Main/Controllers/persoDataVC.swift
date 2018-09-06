@@ -91,7 +91,7 @@ class persoDataVC: UIViewController {
         if theme.textColor.count == 1 {
             descriptionLbl.textColor = colorGenerator.oneColor(theme.textColor[0])
         } else {
-            descriptionLbl.textColor = colorGenerator.oneColor(theme.textColor[0])
+            descriptionLbl.textColor = colorGenerator.oneColor(theme.textColor[0]) 
         }
         
         if theme.backButtonColor.count == 1 {
