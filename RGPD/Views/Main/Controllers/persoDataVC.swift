@@ -13,7 +13,7 @@ class persoDataVC: UIViewController {
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var checkBackground: UIView!
     @IBOutlet weak var checkImg: UIImageView!
-    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var descriptionLbl: UITextView!
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var iconImg: UIImageView!
@@ -91,10 +91,7 @@ class persoDataVC: UIViewController {
         if theme.textColor.count == 1 {
             descriptionLbl.textColor = colorGenerator.oneColor(theme.textColor[0])
         } else {
-            let layer = colorGenerator.gradient(theme.textColor)
-            layer.frame = descriptionView.bounds
-            descriptionView.layer.insertSublayer(layer, at: 0)
-            descriptionView.mask = descriptionLbl
+            descriptionLbl.textColor = colorGenerator.oneColor(theme.textColor[0])
         }
         
         if theme.backButtonColor.count == 1 {
