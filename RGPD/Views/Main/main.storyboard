@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,17 +37,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ms-Zn-Qwx">
-                                <rect key="frame" x="50" y="567" width="274" height="50"/>
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="phc-i6-DC1"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Continuer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -58,7 +59,7 @@
                                 <rect key="frame" x="25" y="209" width="325" height="182"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeGestion" translatesAutoresizingMaskIntoConstraints="NO" id="D27-hE-8Cw">
-                                        <rect key="frame" x="120" y="48" width="85" height="85"/>
+                                        <rect key="frame" x="120" y="48.5" width="85" height="85"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="85" id="3eb-Mk-ncM"/>
                                             <constraint firstAttribute="height" constant="85" id="EP8-6b-ZzB"/>
@@ -72,11 +73,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wD-nk-UEI">
-                                <rect key="frame" x="25" y="50" width="287" height="52"/>
+                                <rect key="frame" x="25" y="50" width="310.5" height="52"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gestion de la" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNe-Q3-ye4">
-                                        <rect key="frame" x="0.0" y="0.0" width="287" height="52"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310.5" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -90,11 +91,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-MQ-qN0">
-                                <rect key="frame" x="25" y="97" width="220" height="58"/>
+                                <rect key="frame" x="25" y="97" width="239.5" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vie Privée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1j-Um-FEj">
-                                        <rect key="frame" x="0.0" y="0.0" width="220" height="57.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="239.5" height="58"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                         <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -250,17 +251,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIe-4K-pLT">
-                                <rect key="frame" x="50" y="567" width="274" height="50"/>
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
                                 <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bas-go-FFv"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Continuer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -268,13 +270,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1q-gf-ufe">
-                                <rect key="frame" x="25" y="515.5" width="22" height="22"/>
+                                <rect key="frame" x="25" y="515" width="22" height="22"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qd2-Kb-fY0">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeCheck" translatesAutoresizingMaskIntoConstraints="NO" id="l07-Av-jrx">
-                                                <rect key="frame" x="4" y="7" width="13" height="8"/>
+                                                <rect key="frame" x="4.5" y="7" width="13" height="8"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -305,7 +307,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-tx-XiH">
-                                <rect key="frame" x="25" y="512" width="103" height="30"/>
+                                <rect key="frame" x="25" y="510" width="109" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="         J'accepte">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -317,8 +320,8 @@
                                 <rect key="frame" x="25" y="153" width="325" height="101"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Données Personnelles" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHC-iz-nht">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="100.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="101"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -351,23 +354,23 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLq-XI-amf">
-                                <rect key="frame" x="25" y="273" width="325" height="209.5"/>
+                                <rect key="frame" x="25" y="273" width="325" height="207.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G0d-6q-sVM">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="209.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Spx-pS-dJB">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="207.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Suite à la connexion à votre compte Facebook, certaines données personnelles sont stockés dans votre compte.
 
 Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="G0d-6q-sVM" secondAttribute="trailing" id="He0-R5-kYz"/>
-                                    <constraint firstAttribute="bottom" secondItem="G0d-6q-sVM" secondAttribute="bottom" id="WeK-90-CkV"/>
-                                    <constraint firstItem="G0d-6q-sVM" firstAttribute="leading" secondItem="CLq-XI-amf" secondAttribute="leading" id="loR-LJ-sDx"/>
-                                    <constraint firstItem="G0d-6q-sVM" firstAttribute="top" secondItem="CLq-XI-amf" secondAttribute="top" id="oRU-oB-ipb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Spx-pS-dJB" secondAttribute="trailing" id="Ulh-C4-uNn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Spx-pS-dJB" secondAttribute="bottom" id="g6q-R1-j4F"/>
+                                    <constraint firstItem="Spx-pS-dJB" firstAttribute="leading" secondItem="CLq-XI-amf" secondAttribute="leading" id="r3K-F7-fVz"/>
+                                    <constraint firstItem="Spx-pS-dJB" firstAttribute="top" secondItem="CLq-XI-amf" secondAttribute="top" id="ujN-ax-dBh"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -377,7 +380,6 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                             <constraint firstItem="CLq-XI-amf" firstAttribute="centerX" secondItem="XiL-gl-pfy" secondAttribute="centerX" id="0kg-ru-WJd"/>
                             <constraint firstItem="Nm0-zJ-bvQ" firstAttribute="top" secondItem="fi5-kt-32W" secondAttribute="bottom" id="2GL-HY-mHx"/>
                             <constraint firstItem="JMx-vA-Bbh" firstAttribute="top" secondItem="Nm0-zJ-bvQ" secondAttribute="bottom" constant="8" id="3nh-og-aHW"/>
-                            <constraint firstItem="CIe-4K-pLT" firstAttribute="top" secondItem="iLh-tx-XiH" secondAttribute="bottom" constant="25" id="3th-S1-r0I"/>
                             <constraint firstItem="Q1q-gf-ufe" firstAttribute="leading" secondItem="iLh-tx-XiH" secondAttribute="leading" id="3xO-x6-t45"/>
                             <constraint firstItem="iLh-tx-XiH" firstAttribute="top" secondItem="CLq-XI-amf" secondAttribute="bottom" constant="29.5" id="7hb-K4-kmJ"/>
                             <constraint firstItem="Q1q-gf-ufe" firstAttribute="centerY" secondItem="iLh-tx-XiH" secondAttribute="centerY" id="98E-4G-Rci"/>
@@ -399,6 +401,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                             <constraint firstItem="CLq-XI-amf" firstAttribute="leading" secondItem="Nm0-zJ-bvQ" secondAttribute="leading" id="fD9-G1-MnU"/>
                             <constraint firstItem="TWE-9v-OwY" firstAttribute="top" secondItem="XiL-gl-pfy" secondAttribute="top" id="he8-IV-GgW"/>
                             <constraint firstItem="TWE-9v-OwY" firstAttribute="trailing" secondItem="tVt-7o-GCv" secondAttribute="trailing" id="n1H-D7-eTy"/>
+                            <constraint firstItem="CIe-4K-pLT" firstAttribute="top" secondItem="iLh-tx-XiH" secondAttribute="bottom" constant="25" id="ovc-GR-Uzz"/>
                             <constraint firstItem="a1t-dP-hf0" firstAttribute="height" secondItem="fi5-kt-32W" secondAttribute="height" id="q3m-5Q-mba"/>
                             <constraint firstItem="fi5-kt-32W" firstAttribute="leading" secondItem="tVt-7o-GCv" secondAttribute="leading" constant="15" id="qav-ip-CTS"/>
                         </constraints>
@@ -412,7 +415,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                         <outlet property="checkBackground" destination="Q1q-gf-ufe" id="hFJ-HP-s1e"/>
                         <outlet property="checkImg" destination="l07-Av-jrx" id="Mrh-Jh-X7Y"/>
                         <outlet property="checkView" destination="Qd2-Kb-fY0" id="6vk-C2-xvn"/>
-                        <outlet property="descriptionLbl" destination="G0d-6q-sVM" id="C1v-3z-V0A"/>
+                        <outlet property="descriptionLbl" destination="Spx-pS-dJB" id="C9F-Uu-HAl"/>
                         <outlet property="descriptionView" destination="CLq-XI-amf" id="oGJ-Yf-zMU"/>
                         <outlet property="iconImg" destination="SNJ-w4-Gle" id="PgG-wY-B6j"/>
                         <outlet property="iconView" destination="Nm0-zJ-bvQ" id="CPN-ZV-7Aj"/>
@@ -460,17 +463,18 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0T-Jd-u6V">
-                                <rect key="frame" x="50" y="567" width="274" height="50"/>
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qkX-Wk-DlA"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Continuer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -478,13 +482,13 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hh6-wL-nkK">
-                                <rect key="frame" x="25" y="515.5" width="22" height="22"/>
+                                <rect key="frame" x="25" y="515" width="22" height="22"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lju-52-MgI">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeCheck" translatesAutoresizingMaskIntoConstraints="NO" id="sgN-De-HIs">
-                                                <rect key="frame" x="4" y="7" width="13" height="8"/>
+                                                <rect key="frame" x="4.5" y="7" width="13" height="8"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -515,7 +519,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lua-KQ-uCX">
-                                <rect key="frame" x="25" y="512" width="103" height="30"/>
+                                <rect key="frame" x="25" y="510" width="109" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="         J'accepte">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -527,8 +532,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="25" y="153" width="325" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistiques" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSM-RB-pMP">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="50.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -561,21 +566,21 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6N-d3-Trq">
-                                <rect key="frame" x="25" y="223" width="325" height="259.5"/>
+                                <rect key="frame" x="25" y="223" width="325" height="257.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XMq-8r-O5W">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="259.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="trS-xF-Qbk">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="257.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Dans l'objectif d'améliorer notre application, et pour effectuer des statistiques, nous collectons chaque type de sport diffusé, le nom des équipes et le nom de la diffusion que vous paramétrez.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="XMq-8r-O5W" firstAttribute="top" secondItem="v6N-d3-Trq" secondAttribute="top" id="Mkg-Zc-RD7"/>
-                                    <constraint firstItem="XMq-8r-O5W" firstAttribute="leading" secondItem="v6N-d3-Trq" secondAttribute="leading" id="Vz2-qs-OwT"/>
-                                    <constraint firstAttribute="bottom" secondItem="XMq-8r-O5W" secondAttribute="bottom" id="s10-RM-TQd"/>
-                                    <constraint firstAttribute="trailing" secondItem="XMq-8r-O5W" secondAttribute="trailing" id="s8d-dR-AXc"/>
+                                    <constraint firstAttribute="bottom" secondItem="trS-xF-Qbk" secondAttribute="bottom" id="5jc-X6-nCy"/>
+                                    <constraint firstAttribute="trailing" secondItem="trS-xF-Qbk" secondAttribute="trailing" id="IcZ-qX-gxF"/>
+                                    <constraint firstItem="trS-xF-Qbk" firstAttribute="top" secondItem="v6N-d3-Trq" secondAttribute="top" id="S4U-me-yhF"/>
+                                    <constraint firstItem="trS-xF-Qbk" firstAttribute="leading" secondItem="v6N-d3-Trq" secondAttribute="leading" id="fWP-Nw-nBz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -601,8 +606,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                             <constraint firstItem="IDl-VM-WCC" firstAttribute="top" secondItem="bIP-ra-lsU" secondAttribute="top" id="epn-h5-zgt"/>
                             <constraint firstItem="IDl-VM-WCC" firstAttribute="leading" secondItem="bIP-ra-lsU" secondAttribute="leading" constant="15" id="h1I-td-3V1"/>
                             <constraint firstItem="bIP-ra-lsU" firstAttribute="bottom" secondItem="O0T-Jd-u6V" secondAttribute="bottom" constant="50" id="h6S-e7-GeH"/>
+                            <constraint firstItem="O0T-Jd-u6V" firstAttribute="top" secondItem="lua-KQ-uCX" secondAttribute="bottom" constant="25" id="kAs-Vj-BYL"/>
                             <constraint firstItem="O0T-Jd-u6V" firstAttribute="leading" secondItem="CfS-eK-DxZ" secondAttribute="leading" constant="25" id="kY8-HM-rgX"/>
-                            <constraint firstItem="O0T-Jd-u6V" firstAttribute="top" secondItem="lua-KQ-uCX" secondAttribute="bottom" constant="25" id="lrK-SG-SWG"/>
                             <constraint firstItem="O0T-Jd-u6V" firstAttribute="centerX" secondItem="bIP-ra-lsU" secondAttribute="centerX" id="oLE-oC-7wK"/>
                             <constraint firstItem="C0x-8X-WvZ" firstAttribute="top" secondItem="pWf-kJ-sDg" secondAttribute="top" id="qSJ-E9-bOv"/>
                             <constraint firstItem="v6N-d3-Trq" firstAttribute="top" secondItem="ZWk-bN-1U3" secondAttribute="bottom" constant="19" id="tuq-SO-AcE"/>
@@ -620,7 +625,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                         <outlet property="checkBackground" destination="hh6-wL-nkK" id="gRC-LJ-pFi"/>
                         <outlet property="checkImg" destination="sgN-De-HIs" id="BDQ-9I-U8n"/>
                         <outlet property="checkView" destination="Lju-52-MgI" id="sgC-FY-gKa"/>
-                        <outlet property="descriptionLbl" destination="XMq-8r-O5W" id="vxW-JO-hPz"/>
+                        <outlet property="descriptionLbl" destination="trS-xF-Qbk" id="YLX-9R-tex"/>
                         <outlet property="descriptionView" destination="v6N-d3-Trq" id="KWO-55-N5m"/>
                         <outlet property="iconImg" destination="79b-Dk-wJ8" id="7uy-w4-U89"/>
                         <outlet property="iconView" destination="CfS-eK-DxZ" id="Akk-Et-fuv"/>
@@ -668,17 +673,18 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaD-RB-nS3">
-                                <rect key="frame" x="50" y="567" width="274" height="50"/>
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Qhk-hM-ZAN"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Continuer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -686,13 +692,13 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Uy-cs-b56">
-                                <rect key="frame" x="25" y="515.5" width="22" height="22"/>
+                                <rect key="frame" x="25" y="515" width="22" height="22"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVD-x7-Ezj">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeCheck" translatesAutoresizingMaskIntoConstraints="NO" id="i1d-JS-SLf">
-                                                <rect key="frame" x="4" y="7" width="13" height="8"/>
+                                                <rect key="frame" x="4.5" y="7" width="13" height="8"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -723,7 +729,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kk-yU-HXn">
-                                <rect key="frame" x="25" y="512" width="103" height="30"/>
+                                <rect key="frame" x="25" y="510" width="109" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="         J'accepte">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -735,8 +742,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="25" y="153" width="325" height="101"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Propection Commerciale" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvV-Fk-YBf">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="100.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="101"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -769,21 +776,22 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5F-RK-R8F">
-                                <rect key="frame" x="25" y="273" width="325" height="209.5"/>
+                                <rect key="frame" x="25" y="273" width="325" height="207.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-cM-HFH">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="209.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XvG-xt-6ED">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="207.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">A des fins de prospection commerciale, nous conservons votre nom, numéro de téléphone et votre adresse email afin de vous proposer des offres adaptées.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="4N3-cM-HFH" firstAttribute="leading" secondItem="P5F-RK-R8F" secondAttribute="leading" id="W3S-fg-acg"/>
-                                    <constraint firstAttribute="bottom" secondItem="4N3-cM-HFH" secondAttribute="bottom" id="lKg-a6-NGE"/>
-                                    <constraint firstItem="4N3-cM-HFH" firstAttribute="top" secondItem="P5F-RK-R8F" secondAttribute="top" id="qcE-vG-Sn5"/>
-                                    <constraint firstAttribute="trailing" secondItem="4N3-cM-HFH" secondAttribute="trailing" id="uyh-Fl-pUV"/>
+                                    <constraint firstItem="XvG-xt-6ED" firstAttribute="top" secondItem="P5F-RK-R8F" secondAttribute="top" id="3L4-3t-1tn"/>
+                                    <constraint firstAttribute="trailing" secondItem="XvG-xt-6ED" secondAttribute="trailing" id="Yaf-1u-El4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76" id="bJi-p8-1p8"/>
+                                    <constraint firstItem="XvG-xt-6ED" firstAttribute="leading" secondItem="P5F-RK-R8F" secondAttribute="leading" id="nFM-Wi-SJ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="XvG-xt-6ED" secondAttribute="bottom" id="yL9-Bj-1xy"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -798,7 +806,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                             <constraint firstItem="LaD-RB-nS3" firstAttribute="centerX" secondItem="ozN-sE-7b5" secondAttribute="centerX" id="4N4-Ko-rZH"/>
                             <constraint firstItem="0Uy-cs-b56" firstAttribute="centerY" secondItem="8kk-yU-HXn" secondAttribute="centerY" id="5FM-tr-Vrs"/>
                             <constraint firstAttribute="bottom" secondItem="3gs-IV-1oo" secondAttribute="bottom" id="5tg-9Z-0sb"/>
-                            <constraint firstItem="LaD-RB-nS3" firstAttribute="top" secondItem="8kk-yU-HXn" secondAttribute="bottom" constant="25" id="72o-CW-xbH"/>
+                            <constraint firstItem="LaD-RB-nS3" firstAttribute="top" secondItem="8kk-yU-HXn" secondAttribute="bottom" constant="25" id="8wh-L9-NwF"/>
                             <constraint firstItem="P5F-RK-R8F" firstAttribute="centerX" secondItem="iA8-lp-5y3" secondAttribute="centerX" id="Aa9-nJ-ix4"/>
                             <constraint firstItem="3gs-IV-1oo" firstAttribute="trailing" secondItem="ozN-sE-7b5" secondAttribute="trailing" id="AyV-di-eE6"/>
                             <constraint firstItem="LaD-RB-nS3" firstAttribute="leading" secondItem="7Nk-d1-x3a" secondAttribute="leading" constant="25" id="D8a-ID-pq5"/>
@@ -828,7 +836,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                         <outlet property="checkBackground" destination="0Uy-cs-b56" id="aca-0q-94G"/>
                         <outlet property="checkImg" destination="i1d-JS-SLf" id="GHp-cE-3Xh"/>
                         <outlet property="checkView" destination="xVD-x7-Ezj" id="Tp4-dA-aJH"/>
-                        <outlet property="descriptionLbl" destination="4N3-cM-HFH" id="HBq-Kf-tss"/>
+                        <outlet property="descriptionLbl" destination="XvG-xt-6ED" id="Cpa-6A-gIe"/>
                         <outlet property="descriptionView" destination="P5F-RK-R8F" id="Mz1-Ru-Qxi"/>
                         <outlet property="iconImg" destination="epf-uB-QAc" id="ZlL-7P-Xvd"/>
                         <outlet property="iconView" destination="7Nk-d1-x3a" id="n39-DG-def"/>
@@ -876,17 +884,18 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-IB-YCM">
-                                <rect key="frame" x="50" y="567" width="274" height="50"/>
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="vbH-n3-oSd"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Continuer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -894,13 +903,13 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-2q-DBy">
-                                <rect key="frame" x="25" y="515.5" width="22" height="22"/>
+                                <rect key="frame" x="25" y="515" width="22" height="22"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSX-bM-Guj">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeCheck" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-SP-JdG">
-                                                <rect key="frame" x="4" y="7" width="13" height="8"/>
+                                                <rect key="frame" x="4.5" y="7" width="13" height="8"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -931,7 +940,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lQ-PY-AoJ">
-                                <rect key="frame" x="25" y="512" width="103" height="30"/>
+                                <rect key="frame" x="25" y="510" width="109" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="         J'accepte">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -943,8 +953,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="25" y="153" width="325" height="101"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Données Bancaires" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3t-Ey-6Md">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="100.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="101"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -977,21 +987,22 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DW-At-tmf">
-                                <rect key="frame" x="25" y="273" width="325" height="209.5"/>
+                                <rect key="frame" x="25" y="273" width="325" height="207.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QuX-WC-P4b">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="209.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yjv-rW-ZsF">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="207.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">A des fins de prospection commerciale, nous conservons votre nom, numéro de téléphone et votre adresse email afin de vous proposer des offres adaptées.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="QuX-WC-P4b" firstAttribute="top" secondItem="8DW-At-tmf" secondAttribute="top" id="7fF-EP-Zul"/>
-                                    <constraint firstAttribute="bottom" secondItem="QuX-WC-P4b" secondAttribute="bottom" id="BNq-yb-Vwy"/>
-                                    <constraint firstAttribute="trailing" secondItem="QuX-WC-P4b" secondAttribute="trailing" id="N5d-SK-6WD"/>
-                                    <constraint firstItem="QuX-WC-P4b" firstAttribute="leading" secondItem="8DW-At-tmf" secondAttribute="leading" id="swo-gx-8pK"/>
+                                    <constraint firstAttribute="trailing" secondItem="yjv-rW-ZsF" secondAttribute="trailing" id="4xw-oT-aNO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76" id="C5d-oE-AgS"/>
+                                    <constraint firstItem="yjv-rW-ZsF" firstAttribute="leading" secondItem="8DW-At-tmf" secondAttribute="leading" id="ga8-Vj-jye"/>
+                                    <constraint firstAttribute="bottom" secondItem="yjv-rW-ZsF" secondAttribute="bottom" id="q9R-BO-dT1"/>
+                                    <constraint firstItem="yjv-rW-ZsF" firstAttribute="top" secondItem="8DW-At-tmf" secondAttribute="top" id="w2V-n4-ysF"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1008,6 +1019,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                             <constraint firstItem="TXJ-oH-l2u" firstAttribute="bottom" secondItem="Trn-IB-YCM" secondAttribute="bottom" constant="50" id="Jnk-La-912"/>
                             <constraint firstItem="WPj-f0-fFI" firstAttribute="top" secondItem="TXJ-oH-l2u" secondAttribute="top" id="KIx-h9-bd0"/>
                             <constraint firstItem="TXJ-oH-l2u" firstAttribute="trailing" secondItem="VY0-L8-hgp" secondAttribute="trailing" id="QIb-zk-qDE"/>
+                            <constraint firstItem="Trn-IB-YCM" firstAttribute="top" secondItem="6lQ-PY-AoJ" secondAttribute="bottom" constant="25" id="Thn-oO-fPn"/>
                             <constraint firstItem="xsm-2q-DBy" firstAttribute="centerY" secondItem="6lQ-PY-AoJ" secondAttribute="centerY" id="Xdt-DQ-0Lx"/>
                             <constraint firstItem="xsm-2q-DBy" firstAttribute="leading" secondItem="HaH-0p-l7B" secondAttribute="leading" id="e4d-St-6C2"/>
                             <constraint firstItem="Vca-HE-eXN" firstAttribute="leading" secondItem="WPj-f0-fFI" secondAttribute="leading" id="eYS-6W-OPT"/>
@@ -1021,7 +1033,6 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                             <constraint firstItem="Vca-HE-eXN" firstAttribute="width" secondItem="WPj-f0-fFI" secondAttribute="width" id="s03-de-5ks"/>
                             <constraint firstItem="Trn-IB-YCM" firstAttribute="centerX" secondItem="TXJ-oH-l2u" secondAttribute="centerX" id="sHw-VL-isc"/>
                             <constraint firstItem="W5c-8Q-k5G" firstAttribute="centerX" secondItem="T5k-UN-rCm" secondAttribute="centerX" id="uYp-hW-UNv"/>
-                            <constraint firstItem="Trn-IB-YCM" firstAttribute="top" secondItem="6lQ-PY-AoJ" secondAttribute="bottom" constant="25" id="vgK-2R-Gmk"/>
                             <constraint firstItem="VY0-L8-hgp" firstAttribute="top" secondItem="T5k-UN-rCm" secondAttribute="top" id="x0C-fu-A2m"/>
                             <constraint firstItem="W5c-8Q-k5G" firstAttribute="top" secondItem="HaH-0p-l7B" secondAttribute="bottom" constant="8" id="z76-Aq-1eh"/>
                             <constraint firstAttribute="bottom" secondItem="VY0-L8-hgp" secondAttribute="bottom" id="zez-uI-JZR"/>
@@ -1036,7 +1047,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                         <outlet property="checkBackground" destination="xsm-2q-DBy" id="UiF-7U-OL1"/>
                         <outlet property="checkImg" destination="eoW-SP-JdG" id="Cx2-yk-XF4"/>
                         <outlet property="checkView" destination="kSX-bM-Guj" id="sUB-Ls-HEK"/>
-                        <outlet property="descriptionLbl" destination="QuX-WC-P4b" id="xcb-il-LNW"/>
+                        <outlet property="descriptionLbl" destination="yjv-rW-ZsF" id="YNz-s7-4De"/>
                         <outlet property="descriptionView" destination="8DW-At-tmf" id="GVp-ld-RNq"/>
                         <outlet property="iconImg" destination="uMn-8y-Ihd" id="Pn3-vu-ztL"/>
                         <outlet property="iconView" destination="HaH-0p-l7B" id="7dz-Rg-TUy"/>
@@ -1084,17 +1095,18 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="der-mc-dnc">
-                                <rect key="frame" x="40" y="567" width="294" height="50"/>
+                                <rect key="frame" x="40" y="567" width="295" height="50"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eM9-yb-ufh"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Continuer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1102,13 +1114,13 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87E-MU-K7w">
-                                <rect key="frame" x="79" y="510.5" width="22" height="22"/>
+                                <rect key="frame" x="71.5" y="511" width="22" height="22"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lk-Cs-k9s">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeCheck" translatesAutoresizingMaskIntoConstraints="NO" id="M9e-Fe-o4E">
-                                                <rect key="frame" x="4" y="7" width="13" height="8"/>
+                                                <rect key="frame" x="4.5" y="7" width="13" height="8"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -1139,10 +1151,11 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJL-UP-di9">
-                                <rect key="frame" x="79" y="507" width="217" height="30"/>
+                                <rect key="frame" x="71.5" y="507" width="232" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="oua-XG-c9r"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="         J'ai lu et accepte les C.G.V">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1154,8 +1167,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="15" y="60" width="345" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conditions générales de vente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4L-Vu-HQM">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="76.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="77"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1169,10 +1182,11 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                     <constraint firstAttribute="bottom" secondItem="z4L-Vu-HQM" secondAttribute="bottom" id="dy7-JI-t9B"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tDo-Ej-uDy">
-                                <rect key="frame" x="30" y="162" width="314" height="340"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tDo-Ej-uDy">
+                                <rect key="frame" x="30" y="162" width="315" height="340"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1261,17 +1275,18 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqa-9o-2Sv">
-                                <rect key="frame" x="40" y="567" width="294" height="50"/>
+                                <rect key="frame" x="40" y="567" width="295" height="50"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MOt-tc-yBD"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Continuer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1279,13 +1294,13 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAc-hd-IbI">
-                                <rect key="frame" x="78" y="510.5" width="22" height="22"/>
+                                <rect key="frame" x="70.5" y="511" width="22" height="22"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moc-dW-wU0">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeCheck" translatesAutoresizingMaskIntoConstraints="NO" id="LRP-DM-CA8">
-                                                <rect key="frame" x="4" y="7" width="13" height="8"/>
+                                                <rect key="frame" x="4.5" y="7" width="13" height="8"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -1316,10 +1331,11 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uX3-20-qlB">
-                                <rect key="frame" x="78" y="507" width="219" height="30"/>
+                                <rect key="frame" x="70.5" y="507" width="234" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="cQb-ez-Dq2"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="         J'ai lu et accepte les C.G.U">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1331,8 +1347,8 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="15" y="60" width="345" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conditions générales d'utilisation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bks-rf-0aO">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="76.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="77"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1346,10 +1362,11 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                     <constraint firstAttribute="bottom" secondItem="Bks-rf-0aO" secondAttribute="bottom" id="oku-OI-iP7"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-uR-lPN">
-                                <rect key="frame" x="30" y="162" width="314" height="340"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-uR-lPN">
+                                <rect key="frame" x="30" y="162" width="315" height="340"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>

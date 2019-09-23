@@ -81,6 +81,13 @@ class AccountVC: UIViewController {
     
     override func viewDidLayoutSubviews() {
         setupView()
+        
+        
+        let path = UIBezierPath(roundedRect: deleteBtn.bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 8, height: 8))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        mask.frame = deleteBtn.bounds
+        deleteBtn.layer.mask = mask
     }
 
     func setupView() {

@@ -189,7 +189,7 @@ class CGVVC: UIViewController {
                 
                 let shape = CAShapeLayer()
                 shape.lineWidth = 1
-                shape.path = UIBezierPath(roundedRect: nextBtn.bounds, cornerRadius: 20).cgPath
+                shape.path = UIBezierPath(roundedRect: nextBtn.bounds, cornerRadius: 8).cgPath
                 shape.strokeColor = UIColor.black.cgColor
                 shape.fillColor = UIColor.clear.cgColor
                 gradient.mask = shape
@@ -261,7 +261,7 @@ class CGVVC: UIViewController {
     
     @IBAction func backPressed(_ sender: Any) {
         if RGPD.shared.pagesAccepted.contains(.cgv) {
-            RGPD.shared.pagesShown.insert(RGPD.shared.pagesAccepted.remove(at: RGPD.shared.pagesAccepted.index(of: .cgv)!), at: 0)
+            RGPD.shared.pagesShown.insert(RGPD.shared.pagesAccepted.remove(at: RGPD.shared.pagesAccepted.firstIndex(of: .cgv)!), at: 0)
         }
         self.navigationController?.popViewController(animated: true)
     }

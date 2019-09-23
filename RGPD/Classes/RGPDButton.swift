@@ -31,7 +31,7 @@ public class RGPDButton: UIButton {
         let bundle = Bundle(for: RGPDButton.self)
         self.setBackgroundImage(UIImage(named: "boutonRGPD", in: bundle, compatibleWith: nil), for: .normal)
         self.layer.cornerRadius = 20
-        self.addTarget(self, action: #selector(onTouchDown), for: UIControlEvents.touchDown)
+        self.addTarget(self, action: #selector(onTouchDown), for: UIControl.Event.touchDown)
     }
     
     @objc func onTouchDown() {

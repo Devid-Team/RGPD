@@ -90,7 +90,10 @@ class statsVC: UIViewController {
         if theme.textColor.count == 1 {
             descriptionLbl.textColor = colorGenerator.oneColor(theme.textColor[0])
         } else {
-            descriptionLbl.textColor = colorGenerator.oneColor(theme.textColor[0])
+            let layer = colorGenerator.gradient(theme.textColor)
+            layer.frame = descriptionView.bounds
+            descriptionView.layer.insertSublayer(layer, at: 0)
+            descriptionView.mask = descriptionLbl
         }
         
         if theme.backButtonColor.count == 1 {
@@ -200,7 +203,7 @@ class statsVC: UIViewController {
                 
                 let shape = CAShapeLayer()
                 shape.lineWidth = 1
-                shape.path = UIBezierPath(roundedRect: nextBtn.bounds, cornerRadius: 20).cgPath
+                shape.path = UIBezierPath(roundedRect: nextBtn.bounds, cornerRadius: 8).cgPath
                 shape.strokeColor = UIColor.black.cgColor
                 shape.fillColor = UIColor.clear.cgColor
                 gradient.mask = shape
@@ -269,7 +272,7 @@ class statsVC: UIViewController {
     
     @IBAction func backPressed(_ sender: Any) {
         if RGPD.shared.pagesAccepted.contains(.stats) {
-            RGPD.shared.pagesShown.insert(RGPD.shared.pagesAccepted.remove(at: RGPD.shared.pagesAccepted.index(of: .stats)!), at: 0)
+            RGPD.shared.pagesShown.insert(RGPD.shared.pagesAccepted.remove(at: RGPD.shared.pagesAccepted.firstIndex(of: .stats)!), at: 0)
         }
         self.navigationController?.popViewController(animated: true)
     }

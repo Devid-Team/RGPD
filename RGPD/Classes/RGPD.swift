@@ -166,6 +166,7 @@ public class RGPD {
         if isInit {
             let storyboard = UIStoryboard(name: "main", bundle: Bundle(for: RGPD.self))
             let controller = storyboard.instantiateViewController(withIdentifier: "begin")
+            controller.modalPresentationStyle = .fullScreen
             viewController.present(controller, animated: true, completion: nil)
         }
     }
@@ -174,6 +175,7 @@ public class RGPD {
         if isInit {
             let storyboard = UIStoryboard(name: "Account", bundle: Bundle(for: RGPD.self))
             let controller = storyboard.instantiateViewController(withIdentifier: "account") as! AccountVC
+            controller.modalPresentationStyle = .fullScreen
             controller.completion = completion
             viewController.present(controller, animated: true, completion: nil)
         }
