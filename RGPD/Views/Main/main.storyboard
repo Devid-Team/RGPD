@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -56,10 +54,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXC-za-FMc">
-                                <rect key="frame" x="25" y="209" width="325" height="182"/>
+                                <rect key="frame" x="25" y="189" width="325" height="202"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeGestion" translatesAutoresizingMaskIntoConstraints="NO" id="D27-hE-8Cw">
-                                        <rect key="frame" x="120" y="48.5" width="85" height="85"/>
+                                        <rect key="frame" x="120" y="58.5" width="85" height="85"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="85" id="3eb-Mk-ncM"/>
                                             <constraint firstAttribute="height" constant="85" id="EP8-6b-ZzB"/>
@@ -73,10 +71,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wD-nk-UEI">
-                                <rect key="frame" x="25" y="50" width="310.5" height="52"/>
+                                <rect key="frame" x="25" y="30" width="310" height="52"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gestion de la" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNe-Q3-ye4">
-                                        <rect key="frame" x="0.0" y="0.0" width="310.5" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="52"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -91,7 +89,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-MQ-qN0">
-                                <rect key="frame" x="25" y="97" width="239.5" height="58"/>
+                                <rect key="frame" x="25" y="77" width="239.5" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vie Privée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1j-Um-FEj">
                                         <rect key="frame" x="0.0" y="0.0" width="239.5" height="58"/>
@@ -109,7 +107,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fx-Y3-Dbi">
-                                <rect key="frame" x="25" y="155" width="325" height="54"/>
+                                <rect key="frame" x="25" y="135" width="325" height="54"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cette application est en conformité avec le Règlement Général sur la Protection des Données." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1c6-0e-trb">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="54"/>
@@ -228,7 +226,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1t-dP-hf0">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeRetour" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-o8-hXK">
                                         <rect key="frame" x="13.5" y="9.5" width="13" height="21"/>
@@ -240,7 +238,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi5-kt-32W">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="UtG-vu-90c"/>
                                     <constraint firstAttribute="width" constant="40" id="rnc-Nr-PFA"/>
@@ -317,7 +315,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMx-vA-Bbh">
-                                <rect key="frame" x="25" y="153" width="325" height="101"/>
+                                <rect key="frame" x="25" y="133" width="325" height="101"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Données Personnelles" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHC-iz-nht">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="101"/>
@@ -336,7 +334,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nm0-zJ-bvQ">
-                                <rect key="frame" x="25" y="60" width="85" height="85"/>
+                                <rect key="frame" x="25" y="40" width="85" height="85"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconesData" translatesAutoresizingMaskIntoConstraints="NO" id="SNJ-w4-Gle">
                                         <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
@@ -354,10 +352,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLq-XI-amf">
-                                <rect key="frame" x="25" y="273" width="325" height="207.5"/>
+                                <rect key="frame" x="25" y="253" width="325" height="227.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Spx-pS-dJB">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="207.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="227.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Suite à la connexion à votre compte Facebook, certaines données personnelles sont stockés dans votre compte.
 
@@ -366,6 +364,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Spx-pS-dJB" secondAttribute="trailing" id="Ulh-C4-uNn"/>
                                     <constraint firstAttribute="bottom" secondItem="Spx-pS-dJB" secondAttribute="bottom" id="g6q-R1-j4F"/>
@@ -440,7 +439,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJG-ou-fHc">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeRetour" translatesAutoresizingMaskIntoConstraints="NO" id="hZM-dF-MDi">
                                         <rect key="frame" x="13.5" y="9.5" width="13" height="21"/>
@@ -452,7 +451,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDl-VM-WCC">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bq0-oB-t2a"/>
                                     <constraint firstAttribute="width" constant="40" id="h7n-aH-gLO"/>
@@ -529,7 +528,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWk-bN-1U3">
-                                <rect key="frame" x="25" y="153" width="325" height="51"/>
+                                <rect key="frame" x="25" y="133" width="325" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistiques" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSM-RB-pMP">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="51"/>
@@ -548,7 +547,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfS-eK-DxZ">
-                                <rect key="frame" x="25" y="60" width="85" height="85"/>
+                                <rect key="frame" x="25" y="40" width="85" height="85"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeStat" translatesAutoresizingMaskIntoConstraints="NO" id="79b-Dk-wJ8">
                                         <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
@@ -566,16 +565,17 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6N-d3-Trq">
-                                <rect key="frame" x="25" y="223" width="325" height="257.5"/>
+                                <rect key="frame" x="25" y="203" width="325" height="277.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="trS-xF-Qbk">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="257.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="277.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Dans l'objectif d'améliorer notre application, et pour effectuer des statistiques, nous collectons chaque type de sport diffusé, le nom des équipes et le nom de la diffusion que vous paramétrez.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="trS-xF-Qbk" secondAttribute="bottom" id="5jc-X6-nCy"/>
                                     <constraint firstAttribute="trailing" secondItem="trS-xF-Qbk" secondAttribute="trailing" id="IcZ-qX-gxF"/>
@@ -650,7 +650,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzF-0e-byW">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeRetour" translatesAutoresizingMaskIntoConstraints="NO" id="MVy-yB-3O4">
                                         <rect key="frame" x="13.5" y="9.5" width="13" height="21"/>
@@ -662,7 +662,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqu-tf-daP">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cBD-Ul-8Sl"/>
                                     <constraint firstAttribute="width" constant="40" id="vHq-jJ-zIL"/>
@@ -739,7 +739,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHE-WW-GDa">
-                                <rect key="frame" x="25" y="153" width="325" height="101"/>
+                                <rect key="frame" x="25" y="133" width="325" height="101"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Propection Commerciale" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvV-Fk-YBf">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="101"/>
@@ -758,7 +758,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-d1-x3a">
-                                <rect key="frame" x="25" y="60" width="85" height="85"/>
+                                <rect key="frame" x="25" y="40" width="85" height="85"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeComm" translatesAutoresizingMaskIntoConstraints="NO" id="epf-uB-QAc">
                                         <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
@@ -776,16 +776,17 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5F-RK-R8F">
-                                <rect key="frame" x="25" y="273" width="325" height="207.5"/>
+                                <rect key="frame" x="25" y="253" width="325" height="227.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XvG-xt-6ED">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="207.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="227.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">A des fins de prospection commerciale, nous conservons votre nom, numéro de téléphone et votre adresse email afin de vous proposer des offres adaptées.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="XvG-xt-6ED" firstAttribute="top" secondItem="P5F-RK-R8F" secondAttribute="top" id="3L4-3t-1tn"/>
                                     <constraint firstAttribute="trailing" secondItem="XvG-xt-6ED" secondAttribute="trailing" id="Yaf-1u-El4"/>
@@ -861,7 +862,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vca-HE-eXN">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeRetour" translatesAutoresizingMaskIntoConstraints="NO" id="kc0-Xk-mob">
                                         <rect key="frame" x="13.5" y="9.5" width="13" height="21"/>
@@ -873,7 +874,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPj-f0-fFI">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="5oo-rF-AXf"/>
                                     <constraint firstAttribute="height" constant="40" id="Uha-f8-tYh"/>
@@ -950,7 +951,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5c-8Q-k5G">
-                                <rect key="frame" x="25" y="153" width="325" height="101"/>
+                                <rect key="frame" x="25" y="133" width="325" height="101"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Données Bancaires" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3t-Ey-6Md">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="101"/>
@@ -969,7 +970,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaH-0p-l7B">
-                                <rect key="frame" x="25" y="60" width="85" height="85"/>
+                                <rect key="frame" x="25" y="40" width="85" height="85"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inconeBank" translatesAutoresizingMaskIntoConstraints="NO" id="uMn-8y-Ihd">
                                         <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
@@ -987,16 +988,17 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DW-At-tmf">
-                                <rect key="frame" x="25" y="273" width="325" height="207.5"/>
+                                <rect key="frame" x="25" y="253" width="325" height="227.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yjv-rW-ZsF">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="207.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="227.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">A des fins de prospection commerciale, nous conservons votre nom, numéro de téléphone et votre adresse email afin de vous proposer des offres adaptées.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yjv-rW-ZsF" secondAttribute="trailing" id="4xw-oT-aNO"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76" id="C5d-oE-AgS"/>
@@ -1072,7 +1074,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKN-Sv-J3O">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeRetour" translatesAutoresizingMaskIntoConstraints="NO" id="twQ-L6-cwl">
                                         <rect key="frame" x="13.5" y="9.5" width="13" height="21"/>
@@ -1084,7 +1086,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-Bq-QYq">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="GUk-rC-mGG"/>
                                     <constraint firstAttribute="height" constant="40" id="rBY-ph-d7G"/>
@@ -1164,7 +1166,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aY8-AA-DfJ">
-                                <rect key="frame" x="15" y="60" width="345" height="77"/>
+                                <rect key="frame" x="15" y="40" width="345" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conditions générales de vente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4L-Vu-HQM">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="77"/>
@@ -1183,7 +1185,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tDo-Ej-uDy">
-                                <rect key="frame" x="30" y="162" width="315" height="340"/>
+                                <rect key="frame" x="30" y="142" width="315" height="360"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1252,7 +1254,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOj-Kn-5I4">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeRetour" translatesAutoresizingMaskIntoConstraints="NO" id="a3A-Af-Tp6">
                                         <rect key="frame" x="13.5" y="9.5" width="13" height="21"/>
@@ -1264,7 +1266,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYJ-Of-ORP">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FzN-hs-8TN"/>
                                     <constraint firstAttribute="width" constant="40" id="aCR-qa-DRr"/>
@@ -1344,7 +1346,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DN-bb-VDw">
-                                <rect key="frame" x="15" y="60" width="345" height="77"/>
+                                <rect key="frame" x="15" y="40" width="345" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conditions générales d'utilisation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bks-rf-0aO">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="77"/>
@@ -1363,7 +1365,7 @@ Nous conserverons ainsi votre adresse email ainsi que vos nom et prénom.</strin
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-uR-lPN">
-                                <rect key="frame" x="30" y="162" width="315" height="340"/>
+                                <rect key="frame" x="30" y="142" width="315" height="360"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>

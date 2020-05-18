@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +21,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otA-Vd-Ws3">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconeRetour" translatesAutoresizingMaskIntoConstraints="NO" id="hfc-Hc-w65">
                                         <rect key="frame" x="13.5" y="9.5" width="13" height="21"/>
@@ -35,7 +33,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBJ-6W-d3c">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="fti-Ir-hLJ"/>
                                     <constraint firstAttribute="width" constant="40" id="hKV-LE-V3z"/>
@@ -46,7 +44,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gd-Wk-pyu">
-                                <rect key="frame" x="25" y="60" width="325" height="77"/>
+                                <rect key="frame" x="25" y="40" width="325" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gestion des données Personnelles" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gut-0R-MXR">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="77"/>
@@ -83,7 +81,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LqZ-hF-CEc">
-                                <rect key="frame" x="25" y="152" width="325" height="469.5"/>
+                                <rect key="frame" x="25" y="132" width="325" height="489.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9g-bc-D6t">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="420"/>
@@ -515,7 +513,7 @@
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="Conditions générales d'utilisation">
                                                                         <attributes>
-                                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                                            <font key="NSFont" metaFont="menu" size="14"/>
                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                             <integer key="NSUnderline" value="1"/>
                                                                         </attributes>
@@ -563,7 +561,7 @@
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="Conditions générales de vente">
                                                                         <attributes>
-                                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                                            <font key="NSFont" metaFont="menu" size="14"/>
                                                                             <integer key="NSUnderline" value="1"/>
                                                                         </attributes>
                                                                     </fragment>
@@ -744,11 +742,11 @@
             <objects>
                 <viewController id="ZTM-nQ-HX5" customClass="PreviewVC" customModule="RGPD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5mm-YZ-fKp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGm-K8-bCo">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Croix" translatesAutoresizingMaskIntoConstraints="NO" id="olU-LA-XP6">
                                         <rect key="frame" x="9.5" y="9.5" width="21" height="21"/>
@@ -760,7 +758,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbj-yo-ZxJ">
-                                <rect key="frame" x="15" y="20" width="40" height="40"/>
+                                <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="QAP-X1-W6M"/>
                                     <constraint firstAttribute="height" constant="40" id="yM4-yQ-VMr"/>
@@ -772,15 +770,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conditions générales d'utilisation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qz8-cd-6uV">
-                                <rect key="frame" x="20" y="75" width="335" height="136.5"/>
+                                <rect key="frame" x="20" y="55" width="335" height="136.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bka-A6-dZn">
-                                <rect key="frame" x="30" y="226.5" width="315" height="425.5"/>
+                                <rect key="frame" x="30" y="206.5" width="315" height="425.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>

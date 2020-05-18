@@ -9,7 +9,8 @@
 import Foundation
 
 struct Config {
-    static let baseURL = "http://dev.dev-id.fr:8080"
+    static let baseURL = "https://rgpd.dev-id.fr"
+//    static let baseURL = "http://dev.dev-id.fr:8080"
     static let userAuthorizationURL = "/Api/authorization"
     static let appliConfigURL = "/Api/appliConfig"
     static let deleteAuthURL = "/Api/DeleteAuth"

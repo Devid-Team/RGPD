@@ -13,9 +13,9 @@ class Webservice {
     static func getUserAuthorizations(completion : @escaping(Data?) -> Void) {
         let url = URL(string: Config.baseURL + Config.userAuthorizationURL + "?bundleId=\(RGPD.shared.applicationBundleId!)&phoneId=\(UIDevice.current.identifierForVendor!)")
         
-        Alamofire.request(url!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { response in
-            guard response.result.isSuccess else {
-                print("POD RGPD Error : \(response)")
+        AF.request(url!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseData { response in
+            if let error = response.error  {
+                print("POD RGPD Error : \(error)")
                 completion(nil)
                 return
             }
@@ -26,9 +26,9 @@ class Webservice {
     static func getConfig(completion : @escaping(Data?) -> Void) {
         let url = URL(string: Config.baseURL + Config.appliConfigURL + "?bundleId=\(RGPD.shared.applicationBundleId!)")
         
-        Alamofire.request(url!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { response in
-            guard response.result.isSuccess else {
-                print("POD RGPD Error : \(response)")
+        AF.request(url!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseData { response in
+            if let error = response.error  {
+                print("POD RGPD Error : \(error)")
                 completion(nil)
                 return
             }
@@ -38,14 +38,14 @@ class Webservice {
     
     static func updateUserAuthorizations(authKeysString : String, completion : @escaping(Data?) -> Void) {
         let params : [String : String] = ["bundleId" : RGPD.shared.applicationBundleId!,
-                      "phoneId": "\(UIDevice.current.identifierForVendor!)",
-                      "auth" : authKeysString]
+                                          "phoneId": "\(UIDevice.current.identifierForVendor!)",
+            "auth" : authKeysString]
         
         let url = URL(string: Config.baseURL + Config.userAuthorizationURL)!
         
-        Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).validate(statusCode: 200...400).responseJSON { response in
-            guard response.result.isSuccess else {
-                print("POD RGPD Error : \(response)")
+        AF.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).validate(statusCode: 200...400).responseData { response in
+            if let error = response.error  {
+                print("POD RGPD Error : \(error)")
                 completion(nil)
                 return
             }
@@ -59,9 +59,9 @@ class Webservice {
         
         let url = URL(string: Config.baseURL + Config.deleteAuthURL)!
         
-        Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).validate(statusCode: 200...400).responseJSON { response in
-            guard response.result.isSuccess else {
-                print("POD RGPD Error : \(response)")
+        AF.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).validate(statusCode: 200...400).responseData { response in
+            if let error = response.error  {
+                print("POD RGPD Error : \(error)")
                 completion(nil)
                 return
             }
