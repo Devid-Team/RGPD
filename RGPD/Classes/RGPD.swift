@@ -117,6 +117,7 @@ public class RGPD {
                 completionHandler(false)
                 return
             }
+            self.pagesShown.removeAll()
             if self.authGiven != nil {
                 if self.texts.CGU != nil && !self.authGiven.keyAccepted.contains(RGPDPages.cgu.rawValue) {
                     self.pagesShown.append(.cgu)
